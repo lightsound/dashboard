@@ -37,4 +37,3 @@ yarn-error.log*
 
 # tailwind
 .turbo
-styles/dist.css

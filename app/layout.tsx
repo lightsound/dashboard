@@ -1,13 +1,13 @@
-import "../styles/dist.css";
+import "tailwindcss/tailwind.css";
 import { ReactNode } from "react";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <html>
+    <html lang="ja">
       <head>
         <title>Dashboard</title>
       </head>
-      <body>{children}</body>
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 };

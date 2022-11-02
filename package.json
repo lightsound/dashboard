@@ -1,33 +1,38 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
-    "dev:tailwind": "concurrently 'yarn dev' 'yarn tailwind --watch'",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tailwind": "tailwindcss -i styles/globals.css -o styles/dist.css",
-    "format": "prettier --write \"**/*.{js,ts,tsx,md}\" --ignore-path .gitignore",
-    "postinstall": "yarn tailwind"
+    "format": "prettier --write \"**/*.{js,ts,tsx,md}\" --ignore-path .gitignore"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
   },
   "dependencies": {
-    "clsx": "1.2.1",
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@headlessui/react": "^1.7.3",
+    "clsx": "^1.2.1",
+    "next": "^13.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.11.8",
-    "@types/react": "18.0.24",
-    "@types/react-dom": "18.0.8",
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.5.0",
-    "eslint": "8.26.0",
-    "eslint-config-next": "latest",
+    "eslint": "^8.26.0",
+    "eslint-config-next": "^13.0.1",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.12",
     "tailwindcss": "^3.1.6",
-    "typescript": "4.8.4"
+    "typescript": "^4.8.4"
   }
 }
