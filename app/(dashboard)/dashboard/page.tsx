@@ -1,5 +1,19 @@
+import { Chart } from "./components/Chart";
+import { Cards } from "./components/Cards";
+import { PageShell } from "./components/PageShell";
+
 const Page = () => {
-  return <div className="text-red-500">dashboard</div>;
+  return (
+    <PageShell
+      title="Dashboard"
+      text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+    >
+      <div className="space-y-4">
+        <Cards />
+        <Chart />
+      </div>
+    </PageShell>
+  );
 };
 
 export default Page;

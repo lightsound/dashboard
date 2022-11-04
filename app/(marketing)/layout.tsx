@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import localFont from "@next/font/local";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { FocusVisibleProvider } from "./components/FocusVisibleProvider";
 
 const lineSeedJpFont = localFont({
   display: "swap",
@@ -16,13 +15,11 @@ const lineSeedJpFont = localFont({
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <FocusVisibleProvider>
-      <div className={lineSeedJpFont.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </div>
-    </FocusVisibleProvider>
+    <div className={lineSeedJpFont.className}>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
   );
 };
 

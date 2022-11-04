@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 import { ReactNode } from "react";
+import { FocusVisibleProvider } from "./FocusVisibleProvider";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -7,7 +8,9 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       <head>
         <title>Dashboard</title>
       </head>
-      <body>{children}</body>
+      <body className="min-h-screen bg-slate-50">
+        <FocusVisibleProvider>{children}</FocusVisibleProvider>
+      </body>
     </html>
   );
 };

@@ -1,19 +1,9 @@
-import Link from "next/link";
+import "@tremor/react/dist/esm/tremor.css";
 import { ReactNode } from "react";
+import { AppShell, MenuBar } from "./components";
 
-const RootLayout = ({ children }: { children: ReactNode }) => {
-  return (
-    <div>
-      <aside>
-        <nav>
-          <Link href="/">ホーム</Link>
-          <Link href="/pricing">料金</Link>
-          <Link href="/dashboard">ログイン</Link>
-        </nav>
-      </aside>
-
-      <div>{children}</div>
-    </div>
-  );
+const Layout = ({ children }: { children: ReactNode }) => {
+  return <AppShell menuBar={<MenuBar />}>{children}</AppShell>;
 };
-export default RootLayout;
+
+export default Layout;
