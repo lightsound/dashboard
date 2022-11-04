@@ -10,7 +10,7 @@ import { Tuple } from "./logos/Tuple";
 export const Hero = () => {
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-32">
-      <h1 className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+      <h1 className="mx-auto max-w-5xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Accounting{" "}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
@@ -45,7 +45,7 @@ export const Hero = () => {
         </Button>
       </div>
       <div className="mt-36 lg:mt-44">
-        <p className="font-display text-base text-slate-900">
+        <p className="text-base text-slate-900">
           Trusted by these six companies so far
         </p>
         <ul

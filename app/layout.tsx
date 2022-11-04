@@ -7,7 +7,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       <head>
         <title>Dashboard</title>
       </head>
-      <body className="min-h-screen">{children}</body>
+      <body>{children}</body>
     </html>
   );
 };

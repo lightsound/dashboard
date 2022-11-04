@@ -138,9 +138,7 @@ const Feature: FC<FeatureProps> = ({
       >
         {feature.name}
       </h3>
-      <p className="font-display mt-2 text-xl text-slate-900">
-        {feature.summary}
-      </p>
+      <p className="mt-2 text-xl text-slate-900">{feature.summary}</p>
       <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
     </div>
   );
@@ -233,7 +231,7 @@ export const SecondaryFeatures: FC = () => {
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="text-3xl tracking-tight text-slate-900 sm:text-4xl">
             Simplify everyday business tasks.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
