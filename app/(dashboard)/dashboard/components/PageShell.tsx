@@ -13,7 +13,7 @@ export const PageShell: FC<PageShellProps> = ({ title, text, children }) => {
     <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
       <Title>{title}</Title>
       <Text>{text}</Text>
-      <div className="mt-4">{children}</div>
+      <div className="mt-6">{children}</div>
     </div>
   );
 };

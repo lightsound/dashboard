@@ -93,7 +93,7 @@ export const AppShell: FC<AppShellProps> = ({ children, menuBar }) => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        {<main className="flex-1 py-6">{children}</main>}
+        <main className="flex-1 pt-6 pb-12">{children}</main>
       </div>
     </div>
   );

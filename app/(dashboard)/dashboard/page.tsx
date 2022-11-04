@@ -8,7 +8,7 @@ const Page = () => {
       title="Dashboard"
       text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
     >
-      <div className="space-y-4">
+      <div className="space-y-6">
         <Cards />
         <Chart />
       </div>
