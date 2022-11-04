@@ -103,9 +103,24 @@ export const Header = () => {
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="/#features">Features</NavLink>
-              <NavLink href="/#testimonials">Testimonials</NavLink>
-              <NavLink href="/#pricing">Pricing</NavLink>
+              <a
+                href="#features"
+                className="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              >
+                Features
+              </a>
+              <a
+                href="#testimonials"
+                className="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#pricing"
+                className="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              >
+                Pricing
+              </a>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
