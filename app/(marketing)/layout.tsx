@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 
 const lineSeedJpFont = localFont({
   display: "swap",
+  variable: "--font-line",
   src: [
     { path: "./font/LINESeedJP_OTF_Eb.woff2", weight: "800 900" },
     { path: "./font/LINESeedJP_OTF_Bd.woff2", weight: "500 700" },
@@ -15,7 +16,7 @@ const lineSeedJpFont = localFont({
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className={lineSeedJpFont.className}>
+    <div className={`${lineSeedJpFont.className} font-sans`}>
       <Header />
       <main>{children}</main>
       <Footer />
